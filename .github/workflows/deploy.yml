@@ -1,20 +1,27 @@
+# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
+  # Runs on pushes targeting the default branch
   push:
     branches: ['main']
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Allow one concurrent deployment
 concurrency:
   group: 'pages'
   cancel-in-progress: true
 
 jobs:
+  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -22,20 +29,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-      - name: Change to project directory
-        run: cd spotify-artist-search
-      - name: Set up Node
-        uses: actions/setup-node@v2
+        uses: actions/checkout@v2  # Updated to latest version
+      - name: Setup Node.js
+        uses: actions/setup-node@v3  # Updated to latest version
         with:
-          node-version: '14.x'
-          cache: 'pnpm'
+          node-version: '14'  # Use a Node.js version supported by PNPM
+          cache: 'pnpm'  # Use PNPM cache
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile  # Use pnpm instead of npm
       - name: Build
-        run: pnpm run build
+        run: pnpm run build  # Use pnpm instead of npm
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        id: deployment
+        uses: peaceiris/actions-gh-pages@v4  # Use a specialized action for deploying to GitHub Pages
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          publish_branch: gh-pages  # Specify the branch for deployment
+          allow_empty_commit: true
