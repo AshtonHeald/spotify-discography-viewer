@@ -1,8 +1,43 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+  <img src="assets/logo.png" alt="logo" width="200" height="auto" />
+  <h1>Artist Discography</h1>
+  
+  <p>
+    Discover Every Beat: Your Journey Through Artists' Discographies Awaits!
+  </p>
+  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+   
+<h4>
+    <a href="https://github.com/Louis3797/awesome-readme-template/">View Demo</a>
+    &emsp;&emsp;
+    <a href="https://github.com/AshtonHeald/spotify-artist-search/issues">Report Bug</a>
+  </h4>
+</div>
+# Artist Discography
+
+
+
+
+ - [About](#About)
+    * [Screenshots]
+    * [Description]
+    * [Features]
+    * [Tech Stack]
+- [Getting Started](#getting-started)
+    * [Prerequisites]
+    * [Installaiton]
+    * [Configuration]
+    * [Development]
+    * [Deployment]
+- [License](#License)
+
+<!-- Getting Started -->
+###  Getting Started
+
+
+
+
+
