@@ -29,21 +29,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2  # Updated to latest version
-      - name: Setup Node.js
-        uses: actions/setup-node@v3  # Updated to latest version
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
         with:
-          node-version: '14'  # Use a Node.js version supported by PNPM
-          cache: 'pnpm'  # Use PNPM cache
+          node-version: 20
+          cache: 'pnpm'
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile  # Use pnpm instead of npm
+        run: pnpm ci
       - name: Build
-        run: pnpm run build  # Use pnpm instead of npm
+        run: pnpm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload dist folder
+          path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: peaceiris/actions-gh-pages@v4  # Use a specialized action for deploying to GitHub Pages
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages  # Specify the branch for deployment
-          allow_empty_commit: true
+        uses: actions/deploy-pages@v4
