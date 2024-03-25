@@ -1,0 +1,18 @@
+$primary: hsl(141, 76%, 48%);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss'; // Must come after variables
+
+
+img {
+  
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+div.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+a:focus-visible, .album-button:focus-visible {
+  outline-color: $primary;
+}
