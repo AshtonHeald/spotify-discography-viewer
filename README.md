@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.png" alt="logo" width="200" height="auto" />
+  <img src="public/logo.png" alt="logo" width="200" height="auto" />
   <h1>Artist Discography</h1>
   <p>
     Discover Every Beat: Your Journey Through Artists' Discographies Awaits!
@@ -28,22 +28,31 @@
 
 <!-- About -->
 ##  About
+### Screenshots
+  
+|<img src="public/screenshot1.webp" alt="Landing Page" />|<img src="public/screenshot2.webp" alt="Results Page" />|
+|:---:|:---:|
+|<img src="public/screenshot3.webp" alt="Artist Discography Page" />|<img src="public/screenshot4.webp" alt="Album Modal" />|
 
-<div id="screenshots">
-  <img src="/public/screenshot1.webp" />
-</div>
+### Description
+  <p>Artist Discography is a web application powered by the Spotify Web API, designed to provide users with detailed insights into the discographies of their favorite artists. It offers functionalities for searching artists, exploring their complete discographies, and interacting with album details.</p>
 
-<div id="description">
-  <p></p>
-</div>
+> [!NOTE]
+>The availability of data is subject to the Spotify database. Some albums, artists, or other data may not be available if they are not present in the Spotify database.
 
 ### Features
 
 <dl>
-  <dt>Feature 1</dt>
-  <dd>The new version of this product costs significantly less than the previous one!</dd>
-  <dt>Feature 2</dt>
-  <dd>We've changed the product so that it's much easier to use!</dd>
+  <dt>Artist Search</dt>
+  <dd>Utilizes the Spotify Web API's search functionality to enable users to search for artists by name.</dd>
+  <dt>Discography Overview</dt>
+  <dd>Presents a comprehensive view of an artist's discography, including albums and top tracks.</dd>
+  <dt>Album Sorting</dt>
+  <dd>Allows users to sort the discography in ascending or descending order by release date, facilitating ease of exploration</dd>
+  <dt>Albums Modal</dt>
+  <dd>Provides a modal window for each album, showcasing album cover, release date, and tracklist details upon selection.</dd>
+  <dt>Album Pagination</dt>
+  <dd>Implements pagination for albums, displaying six albums per page to enhance navigation through extensive discographies.</dd>
 </dl>
 
 ### Tech Stack
@@ -54,11 +63,6 @@
 | [React Bootstrap](https://react-bootstrap.netlify.app/)  | | |
 | [React Icons](https://react-icons.github.io/react-icons/) | | |
 | [Axios](https://axios-http.com/)  | | |
-
-> [!IMPORTANT]
-> This Project uses the [Spotify Web API](https://developer.spotify.com/documentation/web-api) and requires an access token.
-
-
 
 <!-- Getting Started -->
 ##  Getting Started
