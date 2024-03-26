@@ -30,7 +30,7 @@
 ##  About
 
 <div id="screenshots">
-  <img src="" />
+  <img src="/public/screenshot1.webp" />
 </div>
 
 <div id="description">
@@ -51,7 +51,8 @@
 | Client | Server | DevOps |
 |--------|--------|--------|
 | [React](https://react.dev)  | Github Pages | Github Actions |
-| [Bootstrap](https://react-bootstrap.netlify.app/)  | | |
+| [React Bootstrap](https://react-bootstrap.netlify.app/)  | | |
+| [React Icons](https://react-icons.github.io/react-icons/) | | |
 | [Axios](https://axios-http.com/)  | | |
 
 > [!IMPORTANT]
