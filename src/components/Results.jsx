@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import noImage from '../assets/no-image.webp';
 
 // Custom DisabledLink component
 const DisabledLink = ({ to, disabled, children, className, ...props }) => {
@@ -70,7 +71,7 @@ const Results = () => {
 										src={
 											artist.images[0]
 												? artist.images[0].url
-												: "src/assets/no-image.webp"
+												: noImage
 										}
 										alt={artist.name}
 										style={{
