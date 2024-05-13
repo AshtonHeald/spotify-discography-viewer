@@ -5,7 +5,7 @@
     Discover Every Beat: Your Journey Through Artists' Discographies Awaits!
   </p>
   <h4>
-    <a href="https://github.ashthe.dev/spotify-artist-search/">View Demo</a>
+    <a href="https://gh.ashthe.dev/spotify-artist-search/">View Demo</a>
     &emsp;&emsp;
     <a href="https://github.com/AshtonHeald/spotify-artist-search/issues/new">Report Bug</a>
   </h4>
