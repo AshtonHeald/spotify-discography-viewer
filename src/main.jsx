@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router 
-      basename={import.meta.env.DEV ? '/' : '/spotify-artist-search/'}
+      basename={import.meta.env.DEV ? '/' : '/spotify-discography-viewer/'}
       >
       <App />
     </Router>
